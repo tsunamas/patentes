@@ -1,5 +1,7 @@
 # Ultralytics YOLO 🚀, GPL-3.0 license
 
+# python3.11 ultralytics/yolo/v8/detect/predict.py model="best.pt" source=0 show=true save_crop=true vid_stride=20
+
 import hydra
 import torch
 
@@ -7,7 +9,6 @@ from ultralytics.yolo.engine.predictor import BasePredictor
 from ultralytics.yolo.utils import DEFAULT_CONFIG, ROOT, ops
 from ultralytics.yolo.utils.checks import check_imgsz
 from ultralytics.yolo.utils.plotting import Annotator, colors, save_one_box
-
 
 class DetectionPredictor(BasePredictor):
 
